@@ -137,3 +137,8 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+@media (min-width: 640px) {
+  .main .name p {
+    max-width: 640px !important;
+  }
+}
