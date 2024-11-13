@@ -15,6 +15,9 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.svg',
+    editLink: {
+      pattern: 'https://github.com/changesets/changesets/edit/main/site/src/:path',
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/changesets/changesets' }
