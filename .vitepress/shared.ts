@@ -1,7 +1,7 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/',
+  base: '/changesets-docs/',
   title: 'Changesets',
   head: [
     ['link', { rel: 'icon', href: '/logo.svg ' }],
