@@ -48,7 +48,7 @@ export function sidebarFaq() {
     {
       base: '/faq/',
       items: [
-        { text: 'Pushing in Monorepo?', link: 'pushing-in-monorepo' },
+        { text: 'Pushing in Monorepos?', link: 'pushing-in-monorepos' },
       ]
     }
   ]

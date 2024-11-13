@@ -10,7 +10,7 @@ export function nav() {
     },
     {
       text: 'FAQ',
-      link: '/faq/pushing-in-monorepo',
+      link: '/faq/pushing-in-monorepos',
     },
   ]
 }
