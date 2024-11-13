@@ -11,6 +11,8 @@ export default defineConfig({
   cleanUrls: true,
   metaChunk: true,
 
+  srcDir: 'src',
+
   themeConfig: {
     logo: '/logo.svg',
 

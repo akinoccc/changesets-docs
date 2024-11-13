@@ -5,8 +5,12 @@ export function nav() {
       link: '/guide/intro/what-are-changesets',
     },
     {
+      text: 'Lib',
+      link: '/lib/apply-release-plan',
+    },
+    {
       text: 'FAQ',
-      link: '/faq/',
+      link: '/faq/pushing-in-monorepo',
     },
   ]
 }

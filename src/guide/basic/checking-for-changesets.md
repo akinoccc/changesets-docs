@@ -2,7 +2,7 @@
 
 [//]: # (todo: replace the link below with a link to the docs)
 Using `@changesets/cli`, there is a `status` command. See the docs for it in the
-[@changesets/cli readme](../packages/cli/README.md#status)
+[@changesets/cli](/lib/cli#status)
 
 We have a [github bot](https://github.com/apps/changeset-bot) and a
 [bitbucket addon](https://bitbucket.org/atlassian/atlaskit-mk-2/src/master/build/bitbucket-release-addon/) that

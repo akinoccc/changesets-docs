@@ -1,7 +1,7 @@
 import shared from "./shared";
 import { defineConfig } from "vitepress";
 import { nav } from "./nav";
-import { sidebarGuide } from "./sidebar";
+import {sidebarFaq, sidebarGuide, sidebarLib} from "./sidebar";
 
 export default defineConfig({
   ...shared,
@@ -15,6 +15,14 @@ export default defineConfig({
           '/guide': {
             base: 'guide',
             items: sidebarGuide()
+          },
+          '/faq': {
+            base: 'faq',
+            items: sidebarFaq()
+          },
+          '/lib': {
+            base: 'lib',
+            items: sidebarLib()
           }
         }
       }

@@ -88,13 +88,13 @@ This command is used to allow you to skip packages from being published. This al
 1. If the package is mentioned in a changeset that also includes a package that is not ignored, publishing will fail.
 2. If the package requires one of its dependencies to be updated as part of a publish.
 
-These restrictions exist to ensure your repository or published code does not end up in a broken state. For additional information on the intricacies of publishing, check out our guide on [problems publishing in monorepos](./problems-publishing-in-monorepos.md).
+These restrictions exist to ensure your repository or published code does not end up in a broken state. For additional information on the intricacies of publishing, check out our guide on [problems publishing in monorepos](/faq/publishing-in-monorepos).
 
 ```bash
 changeset version --snapshot
 ```
 
-Snapshot is used for a special kind of publishing for testing - it creates temporary versions with a tag, instead of updating versions from the current semver ranges. You should not use this without [reading the documentation on snapshot releases](./snapshot-releases.md)
+Snapshot is used for a special kind of publishing for testing - it creates temporary versions with a tag, instead of updating versions from the current semver ranges. You should not use this without [reading the documentation on snapshot releases](/guide/advance/snapshot-releases)
 
 ## publish
 
@@ -108,7 +108,7 @@ Because this command assumes that the last commit is the release commit, you sho
 
 `--otp={token}` - allows you to provide an npm one-time password if you have auth and writes enabled on npm. The CLI also prompts for the OTP if it's not provided with the --otp option.
 
-`--tag TAGNAME` - for packages that are published, the chosen tag will be used instead of `latest`, allowing you to publish changes intended for testing and validation, not main consumption. This will most likely be used with [snapshot releases](/guide/advance/snapshot-release).
+`--tag TAGNAME` - for packages that are published, the chosen tag will be used instead of `latest`, allowing you to publish changes intended for testing and validation, not main consumption. This will most likely be used with [snapshot releases](/guide/advance/snapshot-releases).
 
 ### Git Tags
 
@@ -143,9 +143,8 @@ pre [exit|enter {tag}]
 
 The pre command enters and exits pre mode. The command does not do any actual versioning, when doing a pre-release, you should run changeset pre enter next(or a different tag, the tag is what is in versions and is the npm dist tag) and then do the normal release process with changeset version and changeset publish. For more information about the pre command, see the prereleases [the prereleases documentation](/guide/advance/pre-releases).
 
-[//]: # (todo: replace link)
 > [!CAUTION]
-> pre-releases are a very complicated feature. Many of the safety rails that changesets helps you with will be taken off. We recommend that you read both [problems publishing in monorepos](./problems-publishing-in-monorepos.md) and be clear on both exiting and entering pre-releases before using it. You may also prefer using [snapshot releases](/guide/advance/snapshot-releases) for a slightly less involved process.
+> pre-releases are a very complicated feature. Many of the safety rails that changesets helps you with will be taken off. We recommend that you read both [problems publishing in monorepos](/faq/publishing-in-monorepos) and be clear on both exiting and entering pre-releases before using it. You may also prefer using [snapshot releases](/guide/advance/snapshot-releases) for a slightly less involved process.
 
 ## tag
 
